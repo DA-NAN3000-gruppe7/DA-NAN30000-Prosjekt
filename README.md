@@ -9,14 +9,13 @@ Kjør dette ved hjelp av
 
 
 # mp1
-Befinner seg i *bin/webserver.c*
+Befinner seg i *unshare/bin/webserver.c*
 
 # mp2
-bin, etc og var
-
+Befinner seg i *unshare-> bin, etc og var*
 
 # mp3
-usr/bin/docker
+Befinner seg i *docker*
 
 # mp4
-var/www/js-client
+Befinner seg i *unshare/var/www/js-client*
