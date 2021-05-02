@@ -7,7 +7,7 @@ if [ "$EUID" -ne 0 ]
 fi
 
 #assings path to current directory and to init.sh
-ROTFS=$PWD
+ROTFS=$PWD/unshare
 INIT=$ROTFS/bin/init.sh
 
 
@@ -37,7 +37,7 @@ if gcc $ROTFS/bin/webserver.c --static -o $ROTFS/bin/webserver.o; then
 
 	#starting docker containers
 
-	cd $ROTFS/usr/bin/docker
+	cd $PWD/docker
 
 
 	# starting docker containers
