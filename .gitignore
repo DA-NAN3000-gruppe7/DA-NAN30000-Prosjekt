@@ -1,0 +1,6 @@
+bin/*
+proc/*
+!proc/.gitkeep
+!bin/webserver.c
+!bin/init.sh
+var/log/debug.log

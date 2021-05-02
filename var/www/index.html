@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Gruppe 7 sin side!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>Dette er en eksempelside til Gruppe 7 for å demonstrere at webserveren fungerer riktig.</p>
+    <br>
+    <p id="bottom_text">Denne teksten blir rød ved bruk av CSS-stil</p>
+    <br>
+    <a href="http://localhost:8000/cgi-bin/editor.sh">Prøv CGI-basert webgrensensitt</a>
+    <br>
+    <a href="js-client/">Prøv Javascript-klient</a>
+    <br>
+    <img src="img/html5.png" alt="html5">
+  </body>
+</html>
+
+<script type="text/javascript">  
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register("js-client/sw.js")
+    .then(registration => console.log(registration))
+    .catch(error => alert(error)); 
+}
+</script>

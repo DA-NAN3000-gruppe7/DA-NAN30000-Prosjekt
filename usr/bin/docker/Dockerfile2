@@ -1,0 +1,26 @@
+# Base image.
+FROM httpd:alpine
+
+# Installer apache.
+RUN apk upgrade
+RUN apk add apache2 apache2-utils curl libxml2 libxml2-utils sqlite jq
+
+# Opprett katalog for databasen.
+RUN mkdir database
+
+# Tillat cgi i cgi-bin.
+RUN echo " \n \
+<Directory cgi-bin> \n \
+Options +ExecCGI \n \
+AddHandler cgi-script .sh .cgi \n \
+</Directory> \n \
+" >> /etc/apache2/apache2.conf
+
+# Sett rettigheter for cgi-bin.
+RUN chmod -R +x cgi-bin
+
+# Åpne port 80.
+EXPOSE 80
+
+# Kjør apache.
+CMD httpd-foreground

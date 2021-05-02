@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Gruppe 7 - dikteditor</title>
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head>
+<body>
+<h1>Gruppe 7 - Javascript-klient - v1.0</h1>
+<a href="/">Gå til gruppas nettside</a>
+<div class="status-field">
+Debug: --- Start ---<br/>
+</div>
+<div>
+<div class="form-div" id="login-div">
+<p>Du må logge inn</p>
+<FORM ACTION="" METHOD="POST" ID="login-form">
+<INPUT TYPE="hidden" NAME="todo" VALUE="login">
+<label for="inp_user">Brukernavn</label>
+<INPUT TYPE="text" NAME="username" ID="inp_user" VALUE="">
+<label for="inp_password">Passord</label>
+<INPUT TYPE="password" NAME="password" ID="inp_password" VALUE="">
+<INPUT TYPE="hidden" NAME="logout">
+<INPUT TYPE="submit" ID="login" VALUE="Logg inn">
+</FORM>
+</div>
+<div class="form-div">
+<p>Hent et dikt</p>
+<FORM ACTION="" METHOD="GET" ID="get-poem">
+<INPUT TYPE="hidden" NAME="todo" VALUE="Get">
+<label for="inp_diktid">Angi dikt-id</label>
+<INPUT TYPE="text" NAME="diktid" id="inp_read_diktid" VALUE="">
+<INPUT TYPE="submit" ID="read_poem" VALUE="Hent dikt">
+</FORM>
+</div>
+<div class="form-div">
+<p>Hent alle dikt</p>
+<FORM ACTION="" METHOD="GET" ID="get-all-poems">
+<INPUT TYPE="hidden" NAME="todo" VALUE="Getall">
+<INPUT TYPE="submit" ID="read_all" VALUE="Hent alle dikt">
+</FORM>
+</div>
+</div>
+</body>
+</html>
+
+<script async src="app.js"></script>

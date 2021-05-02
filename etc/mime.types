@@ -1,0 +1,10 @@
+text/html					html
+text/plain					txt
+image/png					png
+image/svg					svg
+application/xml				xml
+application/xslt+xml		xsl xslt
+text/css					css
+application/json			json
+image/vnd.microsoft.icon	ico	
+text/javascript				js
