@@ -37,7 +37,7 @@ if gcc $ROTFS/bin/webserver.c --static -o $ROTFS/bin/webserver.o; then
 
 	#starting docker containers
 
-	cd $PWD/docker
+	cd docker
 
 
 	# starting docker containers
